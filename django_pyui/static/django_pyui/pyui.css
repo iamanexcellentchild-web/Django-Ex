@@ -1,0 +1,60 @@
+.pyui-card {
+  background: var(--pyui-color-surface, #fff);
+  border: 1px solid var(--pyui-color-border, #d5d8d0);
+  border-radius: var(--pyui-radius, 0.6rem);
+  color: var(--pyui-color-text, #20251f);
+  padding: calc(var(--pyui-space, 1rem) * 1.5);
+}
+
+.pyui-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pyui-space, 1rem);
+}
+
+.pyui-row {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: var(--pyui-space, 1rem);
+}
+
+.pyui-field {
+  gap: 0.4rem;
+}
+
+.pyui-label {
+  color: var(--pyui-color-muted, #656b63);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.pyui-input,
+.pyui-button {
+  border: 1px solid var(--pyui-color-border, #d5d8d0);
+  border-radius: var(--pyui-radius, 0.6rem);
+  font: inherit;
+  padding: 0.7rem 0.85rem;
+}
+
+.pyui-input {
+  background: var(--pyui-color-surface, #fff);
+  color: var(--pyui-color-text, #20251f);
+}
+
+.pyui-button {
+  background: var(--pyui-color-primary, #355e3b);
+  border-color: var(--pyui-color-primary, #355e3b);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.pyui-button:hover {
+  filter: brightness(0.9);
+}
+
+.pyui-button--secondary {
+  background: transparent;
+  color: var(--pyui-color-primary, #355e3b);
+}

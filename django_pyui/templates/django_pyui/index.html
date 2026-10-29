@@ -1,0 +1,21 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Django PyUI example</title>
+    <link rel="stylesheet" href="{% static 'django_pyui/pyui.css' %}">
+    <style>
+      body { font: 16px/1.5 system-ui, sans-serif; margin: 3rem auto; max-width: 46rem; padding: 0 1rem; }
+      button, input { font: inherit; padding: .5rem .75rem; }
+      #details, #search-results { margin-top: 1rem; }
+      .result { border-bottom: 1px solid #ddd; padding: .5rem 0; }
+    </style>
+    <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+    <script src="{% static 'django_pyui/pyui.js' %}" defer></script>
+  </head>
+  <body>
+    {{ page }}
+  </body>
+</html>
